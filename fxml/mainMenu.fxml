@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="415.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuController">
+   <left>
+      <VBox prefHeight="272.0" prefWidth="141.0" BorderPane.alignment="CENTER">
+         <children>
+	     <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchWaffle5" text="Jogo com 5 linhas">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="5.0" top="70.0" />
+               </VBox.margin></Button>
+	      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchWaffle7" text="Jogo com 7 linhas">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="5.0" />
+               </VBox.margin></Button>
+            <ComboBox fx:id="boxLang" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="130.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <effect>
+                  <Blend />
+               </effect></ComboBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Label fx:id="image" prefHeight="188.0" prefWidth="198.0" style="-fx-border-radius: 25;" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="57.0" prefWidth="415.0" BorderPane.alignment="CENTER">
+        <items>
+      	      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="390.0" text="Vamos ao Waffle!">
+      	         <font>
+      	            <Font size="25.0" />
+      	         </font>
+      	      </Label>
+          <AnchorPane maxHeight="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="413.0" />
+        </items>
+      </SplitPane>
+   </top>
+</BorderPane>

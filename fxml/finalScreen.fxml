@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="283.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalScreenController">
+   <top>
+      <SplitPane fx:id="titleLayout" dividerPositions="0.5" orientation="VERTICAL" prefHeight="50.0" prefWidth="394.0" BorderPane.alignment="CENTER">
+        <items>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="302.0" text="Parabens!">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="298.0">
+               <children>
+                  <Button fx:id="btnBack" mnemonicParsing="false" onAction="#backMainMenu" prefHeight="25.0" prefWidth="66.0" text="Menu" />
+               </children>
+            </HBox>
+        </items>
+      </SplitPane>
+   </top>
+   <center>
+      <ImageView fx:id="imgFinal" fitHeight="257.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

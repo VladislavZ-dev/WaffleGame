@@ -1,0 +1,42 @@
+.letter{
+	-fx-min-width: 55px;
+	-fx-min-height: 55px;
+	-fx-alignment: center;
+	-fx-font-size: 30;
+}
+.wrongLetter{
+	-fx-background-color:  #eeeeee;
+	-fx-background-radius: 10;
+	-fx-border-color: #dddddd;
+	-fx-border-radius: 10;
+}
+
+.rightLetter{
+	-fx-background-color:  #6fb05c;
+	-fx-background-radius: 10;
+	-fx-border-color: #649e53;
+	-fx-border-radius: 10;
+	-fx-text-fill: white;
+}
+
+.missLetter{
+	-fx-background-color:  #e9ba3a;
+	-fx-background-radius: 10;
+	-fx-border-color: #d1a734;
+	-fx-border-radius: 10;
+	-fx-text-fill: white;
+}
+
+.disabled{
+	-fx-background-color:  #454747 ;
+	-fx-background-radius: 10;
+	-fx-border-color: #1a1a1b;
+	-fx-border-radius: 10;
+	-fx-text-fill: white;
+}
+
+.image-view-wrapper {
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}

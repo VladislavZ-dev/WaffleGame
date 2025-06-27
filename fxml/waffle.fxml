@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="390.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WaffleController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="19.0" prefWidth="385.0" style="-fx-background-color: darkgrey;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lNumTries" text="15">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </HBox.margin>
+            </Label>
+            <Label text=" swaps remaining" textFill="#ffffff">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane fx:id="pane" prefHeight="343.0" prefWidth="378.0" stylesheets="/styles/style.css" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="62.0" prefWidth="389.0" BorderPane.alignment="CENTER">
+         <items>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" text="Puzzle #">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lPuzzleId" text="X">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="btnLayout" prefHeight="69.0" prefWidth="388.0">
+               <children>
+                  <Button fx:id="btnBack" alignment="CENTER" mnemonicParsing="false" onAction="#backMainMenu" prefHeight="26.0" prefWidth="195.0" text="Menu" />
+                  <Button fx:id="btnReset" alignment="CENTER" mnemonicParsing="false" onAction="#resetGame" prefHeight="26.0" prefWidth="195.0" text="Restart" />
+                  <Button fx:id="btnNext" disable="true" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="130.0" text="Next" />
+               </children>
+            </HBox>
+         </items>
+      </SplitPane>
+   </top>
+</BorderPane>
